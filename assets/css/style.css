@@ -1,0 +1,158 @@
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { 
+    display:block;
+    overflow: hidden;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000; 
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;   
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+/* end CSS reset */
+
+
+html,
+body {
+  height: 100%;
+  background-color: black;
+}
+
+body
+{
+  height: calc(100% - 10px);
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr min-content min-content;
+  grid-template-rows: min-content 1fr;
+  gap: 5px 5px;
+  grid-auto-flow: row;
+  grid-template-areas: "search-box search-options actions" "table-holder table-holder table-holder";
+  height: 100%;
+}
+
+.table-holder {
+  grid-area: table-holder;
+  overflow: auto;
+}
+
+.search-box {
+  grid-area: search-box;
+}
+
+.search-options {
+  grid-area: search-options;
+  padding: 5px 40px 5px 40px;
+}
+
+.actions {
+  grid-area: actions;
+  padding: 5px 40px 5px 40px;
+}
+
+div div {
+  background-color: yellow;
+  padding: 5px;
+}
+#navbar{
+    height: 100px;
+}
+.glass{
+  background-color: rgba(255, 255, 255, .15);  
+  backdrop-filter: blur(5px);
+  border-radius: 2px;
+  box-shadow: 0px 1px 10px #999;;
+}
+.sticky {
+    position: sticky;
+    top: 0;
+    width: 100%;
+  }
+  
