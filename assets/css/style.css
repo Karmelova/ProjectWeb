@@ -46,7 +46,7 @@ a{
   
 /* Hero Section */
 #hero{
-  background-image: url('/assets/img/hero-bg.png');
+  background-image: url("https://raw.githubusercontent.com/Karmelova/ProjectWeb/master/assets/img/hero-bg.png?token=GHSAT0AAAAAAB7YRDTL7O2BXQIP6TBWF77AZATVXBA");
   background-size: cover;
   background-position: top center;
   position: relative;
