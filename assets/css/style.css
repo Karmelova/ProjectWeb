@@ -20,15 +20,13 @@ body {
   margin: 0;
   background: var(--color-background);
 }
-
+a{
+  text-decoration: none;
+}
 ul,
 li {
   padding: 0;
   margin: 0;
-}
-
-a {
-  text-decoration: none;
 }
 
 .container {
@@ -74,7 +72,8 @@ a {
 #navbar .brand {
   font-size: 30px;
 }
-.nav-list ul{
+
+.nav-list ul {
   list-style: none;
   font-size: 30px;
   display: flex;
@@ -92,8 +91,9 @@ a {
     font-size: 40px;
   }
 }
-@media (min-width: 1366px){
-  .nav-list ul{
+
+@media (min-width: 1366px) {
+  .nav-list ul {
     flex-direction: row;
   }
 }
@@ -102,7 +102,7 @@ a {
   .nav-list ul {
     display: none;
   }
-  
+
   .nav-list.show ul {
     display: flex;
     list-style: none;
