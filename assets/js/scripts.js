@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
   const navbar = document.getElementById("navbar");
-  var menuBtn = document.querySelector(".nav-icon");
+  var menuBtn = document.getElementById("nav-icon");
   var menuItems = document.querySelector(".nav-list");
   var glassMenu = navbar.offsetTop;
 

@@ -104,6 +104,7 @@ a {
   }
   
   .nav-list.show ul {
+    display: flex;
     list-style: none;
     position: absolute;
     background-color: var(--color-background);
