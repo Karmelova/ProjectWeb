@@ -3,7 +3,7 @@
 
 :root {
   --color-primary: #CC0066;
-  --color-secondary: blue;
+  --color-secondary: #2D117C;
   --color-background: #070013;
   --color-white: #f5f5f5;
 }
@@ -20,9 +20,12 @@ body {
   margin: 0;
   background: var(--color-background);
 }
-a{
+
+a {
   text-decoration: none;
+  z-index: 200;
 }
+
 ul,
 li {
   padding: 0;
@@ -36,11 +39,21 @@ li {
   align-items: center;
   justify-content: center;
 }
-
+.gradient-box{
+  position: relative;
+}
+ .gradient{
+  height: 400px; 
+  position: absolute; 
+  top: -200px;
+  z-index: 1;
+  width: 100%;
+    background-image: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #2D117C 50%, rgba(255, 255, 255, 0) 100%)
+ }
 
 /* Navbar */
 #navbar {
-  position: sticky;
+  position: fixed;
   z-index: 1000;
   height: 100px;
   width: 100%;
@@ -97,12 +110,14 @@ li {
     flex-direction: row;
   }
 }
-@media(max-height: 412px){
-  .nav-list.show ul{
+
+@media(max-height: 412px) {
+  .nav-list.show ul {
     padding-top: 40px;
     gap: 15px;
   }
 }
+
 @media (max-width: 1366px) {
   .nav-list ul {
     display: none;
@@ -121,7 +136,7 @@ li {
     width: 100%;
     height: 110vh;
   }
-  
+
   /* Menu Icon */
   .nav-icon {
     cursor: pointer;
@@ -204,7 +219,6 @@ li {
   background-position: top center;
   position: relative;
   z-index: 1;
-  top: -100px;
 }
 
 #hero::after {

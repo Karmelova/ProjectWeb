@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function () {
   var glassMenu = navbar.offsetTop
 
   window.addEventListener('scroll', changeNavbarBackground)
-  menuBtn.addEventListener('click', showMobileMenu)
+  menuBtn.addEventListener('click', toggleMobileMenu)
   menuItems.addEventListener('click', hideMobileMenu)
   menuBrand.addEventListener('click', hideMobileMenu)
   window.addEventListener('resize', () => {
@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   }
 
-  function showMobileMenu () {
+  function toggleMobileMenu () {
     if (menuBtn.classList.contains('reverse')) {
       menuBtn.classList.remove('reverse')
       menuBtn.classList.add('x')
