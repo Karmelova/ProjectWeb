@@ -347,6 +347,24 @@ li {
   background-image: linear-gradient(180deg, var(--color-accents-primary) 10%, var(--color-secondary) 90%);
 }
 
+.card{
+ background-color: var(--color-white);
+ height: 100%;
+ width: 100%;
+}
+.card-wrapper{
+  border-radius: 10px;
+  overflow: hidden;
+  width: 350px;
+  height: 450px;
+}
+.card .image-box{
+  height: 350px;
+}
+.card .image-box img{
+  height: 100%;
+  
+}
 /* End Team Section */
 /* Contact Section */
 #contact {
