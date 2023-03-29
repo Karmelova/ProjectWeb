@@ -468,13 +468,15 @@ li {
   display: flex;
   flex-direction: column;
 }
-.company-info, 
-.map{
+
+.company-info,
+.map {
   min-width: 50%;
-text-align: center;
+  text-align: center;
   color: var(--color-white);
 }
-.company-info{
+
+.company-info {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -482,18 +484,21 @@ text-align: center;
   gap: 5%;
   word-wrap: break-word;
 }
-.company-info h2{
+
+.company-info h2 {
   font-weight: 700;
   font-size: 2.5em;
 }
-.company-info a{
-  color:var(--color-white);
+
+.company-info a {
+  color: var(--color-white);
   text-decoration: none;
   font-weight: 300;
   font-size: 1.5em;
 }
+
 @media (min-width: 1366px) {
-  .contact-wrapper  {
+  .contact-wrapper {
     flex-direction: row;
   }
 }
