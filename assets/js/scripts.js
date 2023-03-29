@@ -4,6 +4,18 @@ document.addEventListener('DOMContentLoaded', function () {
   var menuItems = document.querySelector('.nav-list')
   var menuBrand = document.querySelector('.brand')
   var glassMenu = navbar.offsetTop
+  const images = document.querySelectorAll('img')
+
+  const carousel = document.querySelector('.carousel')
+  firstCard = carousel.querySelectorAll('li')[0];
+  carouselArrows = document.querySelectorAll('.button-wrapper .btn')
+  let firstCardWidth = firstCard.clientWidth + 24.5;
+
+  carouselArrows.forEach(arrowButton => {
+    arrowButton.addEventListener('click', () =>{
+carousel.scrollLeft += arrowButton.id == "btn-left"? -firstCardWidth:firstCardWidth;
+    })
+  })
 
   window.addEventListener('scroll', changeNavbarBackground)
   menuBtn.addEventListener('click', toggleMobileMenu)
@@ -15,6 +27,10 @@ document.addEventListener('DOMContentLoaded', function () {
       window.innerHeight <= 768 && window.innerHeight <= 1080
     )
   })
+  images.forEach(image => {
+    const newURL = image.getAttribute('data-src')
+    image.src = newURL
+  })
 
   function changeNavbarBackground () {
     if (window.pageYOffset >= glassMenu + 10) {
@@ -23,7 +39,7 @@ document.addEventListener('DOMContentLoaded', function () {
       navbar.classList.remove('glass')
     }
   }
-
+ 
   function toggleMobileMenu () {
     if (menuBtn.classList.contains('reverse')) {
       menuBtn.classList.remove('reverse')
