@@ -349,6 +349,7 @@ li {
 #team {
   background-image: linear-gradient(180deg, var(--color-accents-primary) 10%, var(--color-secondary) 90%);
 }
+
 .btn {
   position: absolute;
   width: 40px;
@@ -363,6 +364,7 @@ li {
   font-size: 18px;
   color: var(--color-white);
 }
+
 .btn:active {
   transform: scale(1.1);
 }
@@ -377,20 +379,24 @@ li {
   top: 45%;
   right: 2%;
 }
-.carousel-wrapper{
+
+.carousel-wrapper {
   max-width: 90%;
 }
-.carousel-wrapper .carousel{
+
+.carousel-wrapper .carousel {
   white-space: nowrap;
   overflow: hidden;
   scroll-behavior: smooth;
 }
-.carousel li{
+
+.carousel li {
   height: 500px;
   width: 320px;
   margin-left: 20px;
 }
-.carousel li:first-child{
+
+.carousel li:first-child {
   margin-left: 0px;
 }
 
@@ -405,7 +411,7 @@ li {
 }
 
 
-.card-wrapper{
+.card-wrapper {
   display: inline-block;
   width: 350px;
   height: 450px;
@@ -414,42 +420,84 @@ li {
   border: 0px;
 }
 
-.card{
+.card {
   height: 100%;
- }
- 
-.card .image-box{
-height: 350px;
 }
-.card img{
+
+.card .image-box {
+  height: 350px;
+}
+
+.card img {
   height: 100%;
   width: 100%;
   object-fit: cover;
 }
-.card .profile{
+
+.card .profile {
   display: flex;
   align-items: center;
   column-gap: 12px;
   padding: 15px;
   flex-direction: column;
 }
-.profile .name{
+
+.profile .name {
   font-size: 18px;
   font-weight: 700;
   text-transform: capitalize;
 }
-.profile .profession{
+
+.profile .profession {
   color: rgb(66, 66, 66);
   font-size: 15px;
   font-weight: 500;
   text-transform: capitalize;
 }
+
 /* End Team Section */
 
 /* Contact Section */
 #contact {
   background-image: linear-gradient(180deg, var(--color-secondary) 10%, var(--color-background) 90%);
 }
+
+.contact-wrapper {
+  width: 80%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+}
+.company-info, 
+.map{
+  min-width: 50%;
+text-align: center;
+  color: var(--color-white);
+}
+.company-info{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5%;
+  word-wrap: break-word;
+}
+.company-info h2{
+  font-weight: 700;
+  font-size: 2.5em;
+}
+.company-info a{
+  color:var(--color-white);
+  text-decoration: none;
+  font-weight: 300;
+  font-size: 1.5em;
+}
+@media (min-width: 1366px) {
+  .contact-wrapper  {
+    flex-direction: row;
+  }
+}
+
 
 /* End Contact Section */
 
