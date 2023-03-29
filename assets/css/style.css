@@ -35,6 +35,12 @@ li {
   margin: 0;
 }
 
+img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
 .container {
   height: 100vh;
   width: 100%;
@@ -334,7 +340,47 @@ li {
 #about-us {
   background-image: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, var(--color-accents-secondary) 100%);
 }
+.about-wrapper{
+  width: 80%;
+  height: 80%;
+  color: var(--color-white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.about-image,
+.about-info {
+  min-width: 40%;
+  height: 100%;
+  text-align: center;
+  color: var(--color-white);
+}
+.about-image {
+  display: none;
+}
 
+.about-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5%;
+  word-wrap: break-word;
+}
+
+.about-info p {
+  color: var(--color-white);
+  font-weight: 300;
+  margin: 20px;
+}
+@media (min-width: 1366px) {
+  .about-image {
+    display: flex;
+  }
+  .about-info p{
+    font-size: 1.5em;
+  }
+}
 /* End About Us Section */
 
 
@@ -426,12 +472,6 @@ li {
 
 .card .image-box {
   height: 350px;
-}
-
-.card img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
 }
 
 .card .profile {
